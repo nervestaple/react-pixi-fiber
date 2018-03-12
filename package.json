@@ -11,12 +11,12 @@
   "dependencies": {
     "fbjs": "^0.8.0",
     "performance-now": "^2.1.0",
-    "react-reconciler": "^0.7.0"
+    "react-reconciler": "^0.8.0-alpha.0911da3"
   },
   "peerDependencies": {
     "pixi.js": "^4.4.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.4.0-alpha.0911da3",
+    "react-dom": "^16.4.0-alpha.0911da3"
   },
   "devDependencies": {
     "@types/pixi.js": "^4.4.0",

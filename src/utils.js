@@ -68,7 +68,7 @@ export function setPixiValue(instance, propName, value) {
         "either 1 or 2 coordinates, a 1 or 2 element array containing coordinates, or a PIXI Point/ObservablePoint. " +
         "If only one coordinate is given then X and Y will be set to the provided value. Received: `%s` of type `%s`.",
       propName,
-      JSON.stringify(value),
+      value,
       typeof value
     );
 
