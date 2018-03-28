@@ -1,37 +1,41 @@
 {
   "env": {
     "production": {
-      "plugins": ["external-helpers", "transform-object-rest-spread", "transform-react-jsx"],
       "presets": [
         [
-          "env",
+          "@babel/preset-env",
           {
             "targets": {
               "browsers": ["last 2 versions"]
             },
-            "modules": false,
-            "useBuiltIns": true
-          }
-        ]
+            "modules": false
+          },
+        ],
+        "@babel/preset-react",
+        "@babel/preset-stage-0"
       ]
     },
     "development": {
-      "plugins": ["external-helpers", "transform-object-rest-spread", "transform-react-jsx"],
       "presets": [
         [
-          "env",
+          "@babel/preset-env",
           {
             "targets": {
               "browsers": ["last 2 versions"]
             },
-            "modules": false,
-            "useBuiltIns": true
+            "modules": false
           }
-        ]
+        ],
+        "@babel/preset-react",
+        "@babel/preset-stage-0"
       ]
     },
     "test": {
-      "plugins": ["rewire", "transform-object-rest-spread", "transform-react-jsx", "transform-es2015-modules-commonjs"]
+      "plugins": ["rewire", "transform-es2015-modules-commonjs"],
+      "presets": [
+        "@babel/preset-react",
+        "@babel/preset-stage-0"
+      ]
     }
   }
 }

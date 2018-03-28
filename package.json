@@ -7,28 +7,36 @@
   "license": "MIT",
   "repository": "github:michalochman/react-pixi-fiber",
   "typings": "./index.d.ts",
-  "files": ["LICENSE", "README.md", "index.d.ts", "index.js", "react-pixi-alias.js", "cjs/", "src/"],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.d.ts",
+    "index.js",
+    "react-pixi-alias.js",
+    "cjs/",
+    "src/"
+  ],
   "dependencies": {
     "fbjs": "^0.8.0",
     "performance-now": "^2.1.0",
-    "react-reconciler": "^0.7.0"
+    "react-reconciler": "^0.8.0-alpha.3"
   },
   "peerDependencies": {
     "pixi.js": "^4.4.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.3.0-rc.0",
+    "react-dom": "^16.3.0-rc.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
+    "@babel/preset-stage-0": "^7.0.0-beta.42",
     "@types/pixi.js": "^4.4.0",
     "@types/react": "^16.0.0",
-    "babel-core": "^6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.4.1",
-    "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-rewire": "^1.1.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "canvas-prebuilt": "^1.6.5-prerelease.1",
     "codecov": "^3.0.0",
@@ -42,11 +50,11 @@
     "jest": "^22.4.2",
     "pixi.js": "^4.4.0",
     "prettier": "^1.9.2",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "16.3.0-rc.0",
+    "react-dom": "16.3.0-rc.0",
     "react-test-renderer": "^16.0.0",
     "rollup": "^0.56.3",
-    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-babel": "^4.0.0-beta.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-globals": "^1.1.0",
@@ -69,12 +77,19 @@
   },
   "jest": {
     "coverageDirectory": "coverage",
-    "coverageReporters": ["lcov", "text-summary"],
-    "collectCoverageFrom": ["src/**/*.js"],
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
     "globals": {
       "__DEV__": true
     },
-    "setupFiles": ["./test/jest.setupPixi.js"],
+    "setupFiles": [
+      "./test/jest.setupPixi.js"
+    ],
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
