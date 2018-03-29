@@ -1,10 +1,10 @@
 // List of types supported by ReactPixiFiber
 export const TYPES = {
-  BITMAP_TEXT: "bitmapText",
+  BITMAP_TEXT: "bitmap-text",
   CONTAINER: "container",
   GRAPHICS: "graphics",
-  PARTICLE_CONTAINER: "particlecontainer",
+  PARTICLE_CONTAINER: "particle-container",
   SPRITE: "sprite",
   TEXT: "text",
-  TILING_SPRITE: "tilingsprite",
+  TILING_SPRITE: "tiling-sprite",
 };
